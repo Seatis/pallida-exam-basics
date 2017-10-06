@@ -1,0 +1,5 @@
+__pycache__/
+.vscode/
+temp/
+uniquechars/.vscode/
+uniquechars/__pycache__/
