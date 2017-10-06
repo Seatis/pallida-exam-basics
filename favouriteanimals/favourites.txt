@@ -1,2 +1,5 @@
-dog
-cat
+kacsa
+macska
+kutya
+beka
+alfa

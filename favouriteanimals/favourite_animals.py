@@ -9,6 +9,7 @@
 # The program should only save animals, no need to print them
 import sys
 
+
 def command_selector():
     if len(sys.argv) == 1:
         print("fav_animals [animal] [animal]")
@@ -27,6 +28,14 @@ def collect_unique_animals(favourite_animal_list):
             unique_animal_list.append(favourite_animal)
     store_unique_animals(unique_animal_list)
 
+
+def store_unique_animals(unique_animals):
+    animals_text = ""
+    for animal in unique_animals:
+        animals_text += animal + "\n"
+    fw = open("favourites.txt", "w")
+    fw.write(animals_text)
+    fw.close()
 
 
 command_selector()
