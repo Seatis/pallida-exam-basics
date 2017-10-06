@@ -5,17 +5,14 @@
 # Should print out:
 # ["n", "g", "r", "m"]
 
-# text = "anagram"
-# text = list(text)
-# print(text)
-# print(text.count('a'))
 
-def unique_characters(string):
-    unique_letters = []
-    string = list(string)
-    for letter in string:
-        if string.count(letter) == 1:
-            unique_letters.append(letter)
-    return unique_letters
-
-# print(unique_characters("anagram"))
+def unique_characters(string = ''):
+    if string == '':
+        return 'No string given'
+    else:
+        unique_letters = []
+        string = list(string)
+        for letter in string:
+            if string.count(letter) == 1:
+                unique_letters.append(letter)
+        return unique_letters
