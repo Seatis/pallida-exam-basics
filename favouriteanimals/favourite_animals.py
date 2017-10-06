@@ -16,22 +16,7 @@ def command_selector():
         collect_unique_animals(sys.argv[1:])
 
 
-def collect_unique_animals(favourite_animal_list):
-    unique_animal_list = []
-    for favourite_animal in favourite_animal_list:
-        flag = True
-        for unique_animal in unique_animal_list:
-            if favourite_animal == unique_animal:
-                flag = False
-        if flag:
-            unique_animal_list.append(favourite_animal)
-    store_unique_animals(unique_animal_list)
 
-def store_unique_animals(unique_animals):
-    animals_text = ""
-    for animal in unique_animals:
-        animals_text += animal + "\n"
-    print(animals_text)
 
 command_selector()
 
