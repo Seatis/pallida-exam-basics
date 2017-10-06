@@ -32,8 +32,11 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+A function is a callable object
+A method is a special class of function, it is inside in  the class
+
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+Constructor is an initialize method in the class, this run first after instantiates
+
